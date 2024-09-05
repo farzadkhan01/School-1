@@ -271,7 +271,16 @@ ul li {
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     }
 
+    .intro-img img {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
 
+    .referance-links ul {
+        flex-direction: column;
+    }
+    .all-links a {
+        display: none;
+    }
 
 
 }
