@@ -14,6 +14,7 @@ p {
 
 ul {
     list-style: none;
+    padding-left: 1rem;
 }
 
 ul li {
@@ -171,6 +172,21 @@ a:hover {
     transition: 0.3s all ease-out;
 }
 
+.all-links ul {
+    text-align: justify;
+    border-left: 2px solid lightskyblue;
+}
+
+.all-links ul::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid lightskyblue;
+    margin: -12px 0 0 -24.52px;
+}
+
 ul li {
     padding: 10px 0;
 }
@@ -278,6 +294,7 @@ ul li {
     .referance-links ul {
         flex-direction: column;
     }
+
     .all-links a {
         display: none;
     }
