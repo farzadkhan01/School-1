@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(19, 111, 254, 1);
+}
+
+
+
+/* ================== */
+/* hero-sectoin */
+
+.navbar-brand {
+    width: 100px;
+}
+
+.hero-alignments,
+.art-alignments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.special-alignments {
+    flex-direction: row;
+}
+
+.hero-img img,
+.art-img {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+
+}
+
+.hero-caption h3 {
+    font-size: 42px;
+}
+
+.hero-caption h5 {
+    font-size: 24px;
+}
+
+.hero-caption p {
+    font-size: 18px;
+}
+
+/* section - 2 intro */
+
+.intro-alignments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-img img {
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.intro-caption p {
+    font-size: 18px;
+}
+
+.intro-cati {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catigories,
+.separate-catigory {
+    padding-right: 20px;
+    margin-left: 15px;
+}
+
+.catigories h2,
+.separate-catigory h2 {
+    padding-left: 16px;
+}
+
+.catigories p,
+.separate-catigory p {
+    border-left: 2px solid lightskyblue;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.catigories p::before,
+.separate-catigory p::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid lightskyblue;
+    margin: -12px 0 0 -23px;
+}
+
+
+/* section - 3 art */
+.art-caption {
+    text-align: start;
+}
+
+.art-caption h1 {
+    font-size: 42px;
+}
+
+.art-caption h3 {
+    font-size: 24px;
+}
+
+.art-caption p {
+    font-size: 16px;
+}
+
+/* section - 4 drama */
+.drama-alignments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.for-width {
+    width: 50%;
+}
+
+.drama-img {
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+/* last section */
+.referance-btn button {
+    width: 250px;
+    height: 55px;
+    border-radius: 50px;
+    border: none;
+    font-size: 19px;
+    background-color: rgb(19, 111, 254, 1);
+    color: #ffffff;
+}
+
+
+.referance-btn:hover button {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(19, 111, 254, 1);
+    transition: 0.3s all ease-out;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+/* note */
+
+.note p {
+    text-align: center;
+}
+
+.referance-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* media quary */
+@media screen and (max-width: 992px) and (min-width: 786px) {
+
+
+    .hero-caption h3 {
+        font-size: 26px;
+    }
+
+    .hero-caption h5 {
+        font-size: 14px;
+    }
+
+    .intro-caption p {
+        font-size: 16px;
+    }
+
+    .art-caption h3 {
+        font-size: 18px;
+    }
+
+    .art-caption h1 {
+        font-size: 33px;
+    }
+
+    .art-caption p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .col-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    img {
+        margin-bottom: 15px;
+    }
+
+    .intro-cati {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero-caption h3 {
+        font-size: 26px;
+    }
+
+    .hero-caption h5 {
+        font-size: 14px;
+    }
+
+    .intro-caption p {
+        font-size: 16px;
+    }
+
+    .for-width {
+        width: 100%;
+    }
+
+    .art-caption h3 {
+        font-size: 18px;
+    }
+
+    .art-caption h1 {
+        font-size: 33px;
+    }
+
+    .art-caption p {
+        font-size: 14px;
+    }
+
+    .drama-img {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .hero-img img,
+    .art-img {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+
+
+
+}
